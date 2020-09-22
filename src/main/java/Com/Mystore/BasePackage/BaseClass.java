@@ -70,8 +70,6 @@ public class BaseClass {
             getDriver().get(prop.getProperty("url"));
             getDriver().manage().window().maximize();
             getDriver().manage().deleteAllCookies();
-//         driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.MILLISECONDS);
-//         driver.manage().timeouts().implicitlyWait(60, TimeUnit.MILLISECONDS);
             Action.implicitWait(getDriver(), 50);
             Action.pageLoadTimeOut(getDriver(), 50);
         } else if (browser.equalsIgnoreCase("Firefox")) {
