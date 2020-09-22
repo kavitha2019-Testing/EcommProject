@@ -49,7 +49,7 @@ public class BaseClass {
         FileInputStream fp = new FileInputStream("C:/Users/kavitha/IdeaProjects/MyStoreHybridFramework/Configurations/config.properties");
         prop.load(fp);
     }
-
+// This is first commit to pull.
     public static void launchApp() throws InterruptedException {
         Thread.sleep(5000);
         String browser = prop.getProperty("Browser");
